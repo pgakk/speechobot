@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Speechobot</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Bootstrap core CSS     -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/css/paper-kit.css" rel="stylesheet"/>
+
+  <!--     Fonts and icons     -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top navbar-transparent" color-on-scroll="500" style="padding-top: 0px">
+    <div class="container">
+      <div class="navbar-translate">
+        <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar"></span>
+          <span class="navbar-toggler-bar"></span>
+          <span class="navbar-toggler-bar"></span>
+        </button>
+        <a class="navbar-brand shiftLeft" href="#"><img src="./voice.png" alt="logo" height="75px" width="75px"/></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link twitterAnchor" rel="tooltip" title="Log into Twitter" data-placement="bottom" href="https://twitter.com/" target="_blank">
+              <i class="fa fa-twitter"></i>
+              <p class="d-lg-none">Twitter</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fbAnchor" rel="tooltip" title="Log into Facebook" data-placement="bottom" href="https://www.facebook.com/" target="_blank">
+              <i class="fa fa-facebook-square"></i>
+              <p class="d-lg-none">Facebook</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Log into Instagram" data-placement="bottom" href="https://www.instagram.com/" target="_blank">
+              <i class="fa fa-instagram"></i>
+              <p class="d-lg-none">Instagram</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://github.com/pgakk/useurvoice" target="_blank">
+              <i class="fa fa-github"></i>
+              <p class="d-lg-none">GitHub</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="wrapper" id="particles-jsa">
+    <div class="page-header section-dark" style="background-image: url('./background.jpg')">
+      <div class="content-center">
+        <div class="title-brand">
+          <h1 class="heading color custom-font">SPEECH-O-BOT</h1>
+        </div>
+        <div class="container" style="display: flex"> 
+              
+          <div class="robots">
+            <div class="android"> 
+              <div id="toast" class="speech-bubble" >Sorry, couldn't catch that! Please try again.</div>
+              <div class="head" data-toggle="tooltip" data-placement="right" title="Make your robot do things like, clap, jump, walk, dance by saying them and ask him to search for certain item for you, e.g; say 'Search apple'. Happy Playing!">
+                <div class="eyes"> 
+                  <div class="left_eye"></div> 
+                  <div class="right_eye"></div>
+                </div> 
+              </div> 
+              <div class="upper_body"> 
+                <div class="left_arm"></div> 
+                <div class="torso">
+                  <div class="button"></div>
+                  <div class="button"></div>
+                </div> 
+                <div class="right_arm"></div> 
+              </div> 
+              <div class="lower_body"> 
+                <div class="left_leg"></div> 
+                <div class="right_leg"></div> 
+              </div> 
+            </div><span class="tooltiptext">Tooltip text</span>
+          </div>
+          <div id="content" style="color: white; font-weight:800">
+            <div id="search-input"></div>
+            <div id="search-result" ></div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer bottom-right">
+        <div class="container">
+          <div class="row">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#" data-toggle="modal" data-target="#docModal" style="color: #BEF7E4; font-size: 1.1em"> How I Work?</a></li>
+            </ul>
+            </nav>
+            <div class="credits ml-auto">
+                <span class="copyright footer-style" style="color: #BEF7E4; font-size: 1.1em">
+                    © <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="https://github.com/pgakk/" target="_blank"> Puja </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>    
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="docModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">How I Work</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <pre>
+            Make your robot do things like, clap, jump, walk, dance by saying them and ask him to search for certain item for you, e.g; say 'Search apple'. Happy Playing!
+            Commands I respond to:
+            'Hello'       -> For a wave
+            'Jump'        -> Make a jump
+            'Turn'        -> Make me go round n round
+            'Clap'        -> Clap my hands
+            'Up'          -> Scroll page up
+            'Down'        -> Scroll page down
+            'Walk/Move'   -> Make me walk
+            'Dance/Happy' -> Make me dance
+            'Stomp'       -> Go stomp n stomp
+            'Sky'         -> Show you sky
+            'twitter'     -> Take you to Twitter
+            'Facebook'    -> Take you to Facebook
+            'Instagram'   -> Take you to Instagram
+            'Git'         -> Take you to Github
+            'Search/Find your_query' -> Help you with Google Search
+            'Close/Clear' -> Clear my search results
+            For everything else I'm still learning. Can you help?
+          </pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- Core JS Files -->
+<script src="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Switches -->
+<script src="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/js/bootstrap-switch.min.js"></script>
+
+<!--  Plugins for Slider -->
+<script src="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/js/nouislider.js"></script>
+
+<!--  Plugins for DateTimePicker -->
+<script src="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/js/moment.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/js/bootstrap-datetimepicker.min.js"></script>
+
+<!--  Paper Kit Initialization and functons -->
+<script src="https://cdn.rawgit.com/creativetimofficial/paper-kit/bootstrap4-development/assets/js/paper-kit.js"></script>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+  
+<!-- <script src="particles.js"></script> -->
+<script src="watson-speech.min.js"></script>
+<script src="script.js"></script>
+
+</html>
