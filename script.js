@@ -37,7 +37,6 @@ startMicrophone = () => {
         format: false // optional - performs basic formatting on the results such as capitals an periods
       });
       stream.on('data', function(data) {
-        console.log(data);
         if(data.final)
           doThings(data.alternatives[0].transcript); 
       });
